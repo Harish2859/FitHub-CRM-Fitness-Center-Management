@@ -5,46 +5,45 @@
 ---
 
 ## 📌 Project Overview
-- **Platform:** Salesforce (Apex, LWC, Flows)
+- **Platform:** Salesforce (Apex, Flows, Reports & Dashboards)
 - **Sector:** Healthcare / Fitness
 - **Team Lead:** HARISH M (@Harish2859)
-- **Status:** Phase 2 (Backend Development & Configuration) - STARTED 🚀
+- **Status:** Phase 4 (Security, Testing & Final Documentation) - STARTED 🚀
 
 ## 🛠️ Key Features
-- **Membership Management:** Track active subscriptions and renewals.
-- **Dynamic Scheduling:** Assign trainers to classes based on specialization.
-- **Automated Alerts:** Personalized notifications for subscription expiry.
-- **Data Analytics:** Robust reporting for operational growth.
+- **Membership Management:** Automated tracking of active/expired subscriptions.
+- **Dynamic Scheduling:** Validation rules to ensure accurate class timing.
+- **Automated Alerts:** Record-triggered flows for email notifications.
+- **Executive Dashboard:** Visual data analytics for gym managers.
 
-## 🏗️ Data Model (Completed Schema)
-The following objects and relationships have been established:
-1. **Members (Contact):** Standard object with custom `Membership Status` picklist.
-2. **Trainers (Custom):** Staff management with `Specialization` tracking.
-3. **Fitness Classes (Custom):** Includes `Start/End Date Time` and a **Lookup Relationship** to Trainers.
+## 🏗️ Data Model
+1. **Members (Contact):** Managed via standard object with custom lifecycle status.
+2. **Trainers (Custom):** Specialized profiles for gym staff.
+3. **Fitness Classes (Custom):** Related to Trainers via Lookup relationships.
 
 ---
 
 ## 📅 Roadmap
 
 ### Phase 1: Requirement Analysis & Planning ✅
-- [x] Defined Actor-User roles (Member, Trainer, Manager).
+- [x] Defined Actor-User roles.
 - [x] Mapped Business Logic to Salesforce Objects.
-- [x] Established Entity-Relationship Diagram (ERD) logic.
 - [x] Completed Initial GitHub Repository setup.
 
-### Phase 2: Backend Development & Configuration 🔄
-- [x] Custom Object creation (Trainers, Fitness Classes).
-- [x] Custom Field implementation (Specializations, Status, Schedules).
-- [ ] **NEXT:** Validation Rules (Logic to prevent scheduling errors).
-- [ ] **NEXT:** Automation Flows (Membership Expiry Alerts).
+### Phase 2: Backend Development & Configuration ✅
+- [x] Custom Object and Field implementation.
+- [x] Validation Rules (Schedule Logic).
+- [x] Record-Triggered Flows (Email Automation).
 
-### Phase 3: UI/UX Development
-- [ ] Customizing Lightning Record Pages.
-- [ ] Branding and Navigation menu setup.
+### Phase 3: UI/UX Development & Customization ✅
+- [x] Created Custom Tabs and App Navigation.
+- [x] Developed "Member Status Overview" Reports.
+- [x] Built "FitHub Executive Dashboard" with visual components.
 
-### Phase 4: Data Migration, Testing & Security
-- [ ] Profile and Permission set configurations.
-- [ ] Testing Business Logic with Sample Data.
+### Phase 4: Data Migration, Testing & Security 🔄
+- [x] Profile and Permission set configurations.
+- [ ] **NEXT:** User Acceptance Testing (UAT).
+- [ ] **NEXT:** Final Documentation & Presentation.
 
 ---
 
