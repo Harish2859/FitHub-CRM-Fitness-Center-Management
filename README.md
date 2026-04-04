@@ -8,7 +8,7 @@
 - **Platform:** Salesforce (Apex, LWC, Flows)
 - **Sector:** Healthcare / Fitness
 - **Team Lead:** HARISH M (@Harish2859)
-- **Status:** Phase 1 (Requirement Analysis & Planning) - In Progress
+- **Status:** Phase 2 (Backend Development & Configuration) - STARTED 🚀
 
 ## 🛠️ Key Features
 - **Membership Management:** Track active subscriptions and renewals.
@@ -16,31 +16,35 @@
 - **Automated Alerts:** Personalized notifications for subscription expiry.
 - **Data Analytics:** Robust reporting for operational growth.
 
-## 🏗️ Data Model (Schema)
-The following objects are being implemented:
-1. **Members (Contact):** Standard object for personal details.
-2. **Trainers (Custom):** Specialized staff management.
-3. **Classes (Custom):** Scheduling and capacity tracking.
-4. **Payments (Custom):** Transaction history.
+## 🏗️ Data Model (Completed Schema)
+The following objects and relationships have been established:
+1. **Members (Contact):** Standard object with custom `Membership Status` picklist.
+2. **Trainers (Custom):** Staff management with `Specialization` tracking.
+3. **Fitness Classes (Custom):** Includes `Start/End Date Time` and a **Lookup Relationship** to Trainers.
 
 ---
 
 ## 📅 Roadmap
 
 ### Phase 1: Requirement Analysis & Planning ✅
-- [x] Defined Actor-User roles.
+- [x] Defined Actor-User roles (Member, Trainer, Manager).
 - [x] Mapped Business Logic to Salesforce Objects.
-- [ ] Created Entity-Relationship Diagram (ERD).
+- [x] Established Entity-Relationship Diagram (ERD) logic.
+- [x] Completed Initial GitHub Repository setup.
 
 ### Phase 2: Backend Development & Configuration 🔄
-- [ ] Custom Object creation (Trainers, Classes).
-- [ ] Validation Rules & Automation Flows.
+- [x] Custom Object creation (Trainers, Fitness Classes).
+- [x] Custom Field implementation (Specializations, Status, Schedules).
+- [ ] **NEXT:** Validation Rules (Logic to prevent scheduling errors).
+- [ ] **NEXT:** Automation Flows (Membership Expiry Alerts).
 
 ### Phase 3: UI/UX Development
-- [ ] Customizing Lightning Pages.
+- [ ] Customizing Lightning Record Pages.
+- [ ] Branding and Navigation menu setup.
 
-### Phase 4: Testing & Security
+### Phase 4: Data Migration, Testing & Security
 - [ ] Profile and Permission set configurations.
+- [ ] Testing Business Logic with Sample Data.
 
 ---
 
