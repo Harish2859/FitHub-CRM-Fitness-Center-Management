@@ -3,8 +3,6 @@
 
 # Video Demo Link - https://drive.google.com/file/d/124bd6uz7hGU4q48OPtY1Q3xiKizXoEwf/view?usp=drivesdk
 
-> **A Salesforce Lightning-based comprehensive solution for modern fitness center operations, automating membership lifecycle management and providing real-time executive analytics.**
-
 ---
 
 ## 📌 Project Overview
